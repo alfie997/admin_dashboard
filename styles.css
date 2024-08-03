@@ -22,3 +22,57 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/*^reset^*/
+
+body {
+    background-color: rgb(226, 232, 240);
+    font-family: sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav {
+    background-color: rgb(25, 146, 212);
+    color: white;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+}
+
+header {
+    background-color: white;
+}
+
+header input {
+    background-color: rgb(226, 232, 240);
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    width: 100%;
+}
+
+header button {
+    background-color: rgb(25, 146, 212);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 40px 10px 40px;
+}
+
+.projects div {
+    background-color: white;
+    border-left: 10px solid gold;
+    border-radius: 10px;
+}
+
+.news div {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.trend div {
+    background-color: white;
+    border-radius: 10px;
+}
