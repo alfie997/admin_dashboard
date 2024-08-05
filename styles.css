@@ -124,12 +124,28 @@ header .name {
     justify-self: center;
     font-size: 1.1rem;
     font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+header .name img {
+    height: 50px;
+}
+
+header .profile {
+    height: 80px;
+    justify-self: center;
 }
 
 header h2 {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     display: grid;
+}
+
+header span {
+    font-size: 1rem;
 }
 
 header .buttons {
@@ -144,16 +160,23 @@ header button {
     background-color: rgb(25, 146, 212);
     color: white;
     font-weight: bold;
+    font-size: 1.1rem;
     border: none;
     border-radius: 30px;
-    height: 40px;
-    width: 100px;
+    height: 45px;
+    width: 110px;
 }
 
 main {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+main h3 {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    align-self: end;
 }
 
 section {
@@ -183,6 +206,7 @@ section {
 
 .projects p {
     grid-column: 1 / 4;
+    color: rgb(69, 69, 69);
 }
 
 .projects a {
@@ -191,32 +215,67 @@ section {
     align-self: center;
 }
 
-.news {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    display: grid;
-}
-
-.trend {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    display: grid;
-}
-
 .projects div {
     background-color: white;
     border-left: 10px solid rgb(240, 180, 41);
     border-radius: 10px;
 }
 
+.news {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    gap: 10px;
+}
+
 .news div {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    font-size: 0.9rem;
+    display: grid;
+    align-items: end;
+}
+
+.news p {
+    font-size: 0.8rem;
+    color: rgb(69, 69, 69);
+    padding-bottom: 20px;
+}
+
+.news hr {
+    opacity: 40%;
+}
+
+.trend {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    gap: 10px
 }
 
 .trend div {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.trend img {
+    height: 50px;
+}
+
+.trend h4 {
+    font-weight: lighter;
+}
+
+.trend p {
+    color: rgb(69, 69, 69);
 }
